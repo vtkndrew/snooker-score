@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+test-results/
+test-results-pwa/
+playwright-report/
+package-lock.json

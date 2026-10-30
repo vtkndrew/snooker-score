@@ -1,0 +1,142 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #f4f1e6;
+  background: #101b19;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color-scheme: dark;
+  --line: #35453c;
+  --text: #f4f1e6;
+  --muted: #a6b7ac;
+  --surface: #192a25;
+  --accent: #b6d8a3;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+}
+body[data-modal] {
+  overflow: hidden;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button,
+.button {
+  min-height: 48px;
+  border: 1px solid var(--line);
+  background: #22342b;
+  border-radius: 12px;
+  color: var(--text);
+  padding: 12px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  touch-action: manipulation;
+}
+button:hover,
+.button:hover {
+  background: #304638;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.38;
+}
+button.primary,
+.button.primary {
+  background: var(--accent);
+  color: #15251a;
+  border-color: var(--accent);
+}
+button.primary:hover,
+.button.primary:hover {
+  background: #c6e6b6;
+}
+button.danger {
+  color: #ffb4a8;
+}
+a {
+  color: inherit;
+}
+:focus-visible {
+  outline: 3px solid #e9ce7e;
+  outline-offset: 4px;
+}
+input,
+select {
+  width: 100%;
+  min-width: 0;
+  min-height: 50px;
+  padding: 12px;
+  border: 1px solid #536357;
+  background: #101b19;
+  color: var(--text);
+  border-radius: 10px;
+  font-size: 16px;
+}
+label {
+  display: grid;
+  gap: 8px;
+  color: #c6d0c6;
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: anywhere;
+}
+h1 {
+  font-size: 28px;
+  margin: 0;
+  letter-spacing: -0.8px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+h3 {
+  margin-top: 24px;
+}
+p {
+  line-height: 1.55;
+}
+small {
+  line-height: 1.5;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+summary {
+  cursor: pointer;
+  min-height: 48px;
+  padding: 16px 0;
+  color: var(--muted);
+}
+[role='alert'] {
+  color: #ffb4a8;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
